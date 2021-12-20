@@ -10,3 +10,24 @@ $(".saveBtn").on("click", function() {
     //save data in local storage
     localStorage.setItem(hour, task);
 });
+
+//container for time data
+function timeLoop() {
+
+    //get the current hour
+    var currentTime = moment().hours();
+
+    //color coding past present and future tasks
+    $(".time-block").each(function() {
+      
+        var currentHour = parseInt($(this).attr("id"));
+
+        if (currentTime > currentHour) {
+            $(this).addClass("past");
+        } else if (currentTime < currentHour) {
+            $(this).addClass("future");
+        } else {
+            $(this).addClass("present");
+        }
+    })
+};
