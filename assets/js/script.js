@@ -31,3 +31,18 @@ function timeLoop() {
         }
     })
 };
+
+//refresh
+function refresh () {
+    $(".hour").each(function() {
+        var hourTime = $(this).text();
+        var storageHour = localStorage.getItem(hourTime);
+
+        if (storageHour !== null) {
+            $(this).siblings(".description").val(storageHour);
+        }
+    });
+}
+
+timeLoop();
+refresh();
