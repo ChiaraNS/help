@@ -1,6 +1,6 @@
 # Work Day Scheduler
 
-![work-day](./assets\images\work-day-sc.png)
+![work-day](assets\images\work-day-sc.png)
 ## Table of contents
 * [Work day Scheduler](https://chiarans.github.io/work-day/)
 * [General info](#general-info)
@@ -19,4 +19,4 @@ Project is created with (all through VScode extension):
 *Provided github starter code
 	
 ## Useful Links
-clone starter code https://github.com/coding-boot-camp/super-disco
+Clone starter code https://github.com/coding-boot-camp/super-disco
